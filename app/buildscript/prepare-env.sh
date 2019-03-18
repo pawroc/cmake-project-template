@@ -10,7 +10,6 @@ _set_env_variables()
     [[ $0 = $BASH_SOURCE ]] && usage && exit 1
 
     PROJECT_ROOT="$(dirname "$BASH_SOURCE")/.."
-    # PROJECT_ROOT="$(dirname "$(readlink -f "$0")")/.."
     HUNTER_ROOT="${PROJECT_ROOT}/prefix-root"
 
     echo "Env variables have been set: "
