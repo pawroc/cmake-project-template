@@ -3,15 +3,15 @@
 ### Build
 * Prepare environment by sourcing script prepare-env.sh
 ```bash
-source app/buildscript/prepare-env.sh
+source scripts/prepare-env.sh
 ```
 * Create build directory
 ```bash
-mkdir app/build
+mkdir build
 ```
 * Generate Makefile (or another build script by chosing different generator in cmake command)
 ```bash
-cd app/build
+cd build
 cmake ..
 ```
 * Build application
