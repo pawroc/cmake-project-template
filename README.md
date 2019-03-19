@@ -18,3 +18,9 @@ cmake ..
 ```bash
 cmake --build .
 ```
+
+Because in the project there is no libraries' types specified, you can choose what type you need by passing `-DBUILD_SHARED_LIBS=ON/OFF` switch do `cmake` command, e.g.
+```bash
+cmake .. -DBUILD_SHARED_LIBS=ON
+```
+Above command will generate all unspecified libraries added using `add_library()` as __shared__
