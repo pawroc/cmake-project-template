@@ -12,7 +12,7 @@ add_library(app::app_lib ALIAS app_lib)
 
 add_executable(app main.cpp)
 target_compile_options(app
-INTERFACE
+PUBLIC
     -Wall
     -Wextra # reasonable and standard
     -Wshadow # warn the user if a variable declaration shadows one from a
