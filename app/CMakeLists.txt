@@ -43,4 +43,6 @@ PUBLIC
 
 target_link_libraries(app app::app_lib)
 
+add_subdirectory(ut)
+
 # target_compile_features(app INTERFACE )

@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 3.10.0)
 project(app_ut VERSION 1.0.0 LANGUAGES CXX C)
 
+message(STATUS "ut app processing")
+
 hunter_add_package(GTest)
 find_package(GTest CONFIG REQUIRED)
 find_package(GMock CONFIG REQUIRED)

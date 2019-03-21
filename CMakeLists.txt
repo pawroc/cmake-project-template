@@ -12,4 +12,3 @@ project(cmake-project-template VERSION 1.0.0 LANGUAGES C CXX)
 enable_testing()
 
 add_subdirectory(app)
-add_subdirectory(tests)

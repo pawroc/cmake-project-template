@@ -2,7 +2,9 @@
 
 #include "Dummy.hpp"
 
-namespace // anonymous
+namespace ut
+{
+namespace app
 {
 TEST(DummyTest, getMember_shouldReturnValidValue) 
 {
@@ -12,9 +14,9 @@ TEST(DummyTest, getMember_shouldReturnValidValue)
     EXPECT_EQ(expectedValue, sut.getMember());
 }
 
-
 int main(int argc, char **argv) {
     ::testing::InitGoogleTest(&argc, argv); 
     return RUN_ALL_TESTS();
 }
-} // anonymous namespace
+} // app
+} // ut

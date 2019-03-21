@@ -9,8 +9,8 @@ _set_env_variables()
 {
     [[ $0 = $BASH_SOURCE ]] && usage && exit 1
 
-    PROJECT_ROOT="$(dirname "$BASH_SOURCE")/.."
-    HUNTER_ROOT="${PROJECT_ROOT}/prefix-root"
+    export PROJECT_ROOT="$(dirname "$BASH_SOURCE")/.."
+    export HUNTER_ROOT="${PROJECT_ROOT}/prefix-root"
 
     echo "Env variables have been set: "
     echo "PROJECT_ROOT: '${PROJECT_ROOT}'"
