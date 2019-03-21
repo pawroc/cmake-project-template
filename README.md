@@ -7,11 +7,11 @@ source scripts/prepare-env.sh
 ```
 * Create build directory
 ```bash
-mkdir build
+mkdir app/build
 ```
 * Generate Makefile (or another build script by chosing different generator in cmake command)
 ```bash
-cd build
+cd app/build
 cmake ..
 ```
 * Build application
